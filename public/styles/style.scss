@@ -1,0 +1,785 @@
+@import "globals";
+@import "vars";
+@import "mixins";
+
+
+// Pocetna styles
+.welcome {
+  max-width: 1600px;
+  margin: 30% auto 100px;
+  @include flex;
+  @include responsive(mobilni) {
+    margin-top: 120% !important;
+    max-width: 100%;
+    padding: 11%;
+  }
+  @include responsive(tablet) {
+    margin: 50% auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  @include responsive (laptop){
+    margin: 30% auto;
+  }
+  .row{
+    @include responsive(mobilni) {
+        max-width: 100%;
+      }
+      @include responsive(tablet) {
+        max-width: 100%;
+      }
+      @include responsive(laptop) {
+        max-width: 100%;
+
+      }
+
+
+    .slike {
+        @include flex;
+        position: relative;
+        left: 30px;
+        @include responsive(mobilni) {
+            margin: 0;
+            max-width: 100%;
+            position: relative;
+            left: -10px;
+          }
+          @include responsive(tablet) {
+            margin: 0;
+            max-width: 100%;
+            position: relative;
+            left: -20px;
+          }
+          @include responsive(laptop) {
+            margin: 0;
+            max-width: 100%;
+            position: relative;
+            left: -20px;
+          }
+          .slika1{
+            @include responsive(mobilni) {
+              margin: 0;
+              max-width: 100%;
+              position: relative;
+              left: -25px;
+            }
+
+          }
+    
+        .slika2 {
+          position: relative;
+          left: 20px;
+          top: 80px;
+    
+          @include responsive(mobilni) {
+            margin-bottom: 150px;
+            max-width: 100%;
+            position: relative;
+           left: -25px;
+          }
+          @include responsive(tablet) {
+            margin-bottom: 150px;
+            max-width: 100%;
+          }
+          @include responsive(laptop) {
+            margin-left: -12px;
+            max-width: 100%;
+
+          }
+        }
+      }
+      .txt {
+        position: relative;
+        right: 40px;
+        margin-bottom: 20px;
+        h2 {
+          @include responsive(mobilni) {
+            text-align: center;
+            margin-left: 65px;
+            position: absolute;
+            top: -1400px;
+          }
+        }
+        p {
+          font-family: $fontFamily;
+          font-size: 1rem;
+          line-height: 1.5;
+          @include responsive(mobilni) {
+            font-size: 1.2rem;
+            text-align: left;
+            position: relative;
+            left: 0px;
+          }
+        }
+        .dugmici {
+          display: flex;
+          margin-top: 50px;
+          position: relative;
+          right: 20px;
+          @include responsive(mobilni) {
+            flex-direction: column;
+            align-items: center;
+            margin-left: 250px;
+          }
+          @include responsive(tablet) {
+            flex-direction: column;
+            align-items: center;
+            margin-left: 100px;
+          }
+          button {
+            margin: 0 2px 0 30px;
+            padding: 10px 20px !important;
+            @include dugme;
+            @include responsive(mobilni) {
+              margin-bottom: 30px;
+            }
+            @include responsive(tablet) {
+              margin-bottom: 30px;
+            }
+          }
+        }
+      }
+  }
+ 
+}
+
+// Blog & Pocetna styles
+.blog {
+  @include flex;
+  @include responsive(tablet) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+  }
+  @include responsive(mobilni) {
+    margin-top: 200px;
+  }
+  .row {
+    @include responsive(mobilni) {
+        max-width: 100%;
+      flex-direction: column;
+      align-items: baseline;
+    }
+    @include responsive(tablet) {
+        max-width: 100%;
+      flex-direction: column;
+      align-items: baseline;
+    }
+    @include responsive(laptop) {
+      max-width: 100%;
+      padding-right: 0
+    }
+
+    article {
+      padding: 50px 0;
+      @include responsive(mobilni) {
+        max-width: 100%;
+      }
+      @include responsive(tablet) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      @include responsive (laptop){
+        padding: 0;
+        margin: 70px;
+        width: 33%;
+      }
+      img {
+        width: 496px;
+        height: 204px;
+        @include responsive(mobilni) {
+          max-width: 100%;
+        }
+        @include responsive(tablet) {
+          max-width: 100%;
+        }
+      }
+      p {
+        padding-top: 15px;
+        font-family: $fontThird;
+        &:first-of-type {
+          color: $date;
+        }
+        &:last-of-type {
+          margin-bottom: 52px;
+        }
+      }
+      h5 {
+        font-family: $fontThird;
+        font-weight: 500;
+      }
+      hr {
+        margin-top: 10px;
+        position: relative;
+        left: 12px;
+        width: 320px;
+        border: 1px solid rgba(112, 112, 112, 1);
+        opacity: 0.5;
+      }
+      button {
+        position: relative;
+        left: 110px;
+        @include dugme;
+        &:hover{
+          background-color: $date;
+          border-color: $date;
+        }
+      }
+    }
+  }
+  div{
+    margin-top: 55px;
+    padding: 10px 15px;
+    .sec{
+        @include responsive(mobilni) {
+          margin-top: 80px;
+          margin-left: 150px;
+        }
+        @include responsive(tablet) {
+          margin-top: 80px;
+        }
+        @include dugme;
+    
+      }
+      .postovi{
+        @include dugme;
+      }
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  max-width: 1600px;
+  margin: 332px auto;
+}
+
+
+// suha-marina & restoran styles
+
+.about{
+  margin: 30% auto 10%;
+  max-width: 80%;
+  @include responsive(mobilni){
+    max-width: 100% !important;
+    margin-top: 90% !important;
+
+    }
+  @include responsive(tablet) {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60%;
+  }
+  @include responsive (laptop){
+    margin: 30% auto;
+  }
+  
+   article{
+    position: relative;
+    @include responsive(mobilni){
+      max-width: 100%;
+    }
+    @include responsive(tablet){
+      max-width: 100%;
+      display: flex;
+      flex-direction: column !important;
+      padding: 5%;
+    }
+    @include responsive(laptop){
+      max-width: 95%;
+    }
+    .slika{
+      position: absolute;
+      left: 50%;
+      @include responsive(tablet) {
+        width: 100% ;
+        margin: 0 !important;
+        padding: 5%;
+        position: relative;
+        left: 0;
+      }
+      @include responsive(mobilni){
+        max-width: 100%;
+        margin: 0 !important;
+        position: relative;
+        left: 0;
+      }
+      @include responsive(laptop){
+        width: 60%;
+        height: auto;
+        display: block;
+        margin-top: 120px;
+
+      }
+      img{
+        @include responsive(mobilni){
+          max-width: 100%;
+          margin: 0 !important;
+          padding-bottom: 70px;
+        }
+         @include responsive(tablet){
+         max-width: 100%;
+        }
+        @include responsive(laptop){
+          width: 70%;
+          height: auto;
+          display: block;
+
+        }
+      }
+    }
+    
+    .text{
+      @include responsive(laptop){
+        padding:0 80px;
+      }
+      @include responsive(tablet){
+        width: 100%;
+      }
+      @include responsive(mobilni){
+        padding-left:0px;
+        max-width: 100%;
+
+      }
+
+      p{
+        font-family: $fontFamily;
+        font-size: 15px;
+        @include responsive (mobilni) {
+          margin-top: -20px;
+          margin-left: 15px;
+        }
+        @include responsive (tablet) {
+          margin-left: 15px;
+        }
+
+      }
+      margin-top: 30px;
+
+    }
+
+    &:last-of-type{
+
+      @include responsive(tablet) {
+        max-width: 100%;
+        margin-top: 0;
+        padding: 5%;
+       
+      }
+      @include responsive(mobilni){
+        max-width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: -1%;
+        }
+        @include responsive(laptop){
+          display: flex;
+  
+        }
+
+      margin-top: 90px;
+
+      .text{
+        margin-top: 150px;
+        margin-left: -30px;
+        @include responsive(tablet) {
+          width: 100%;
+          margin-left: 20px;
+        }
+        @include responsive(mobilni){
+          width: 100%;
+           margin: 0 auto 200px;
+          padding: 0 !important;
+          }
+          @include responsive(laptop){
+            width: 45%;
+
+          }
+      }
+      display: flex;
+      flex-direction: row-reverse;
+      .slike{
+
+        @include responsive(mobilni){
+          display: flex;
+          flex-direction: column;
+          margin-top: -40%;
+        }
+        @include responsive(tablet) {
+          max-width: 100%;
+          display:  flex;
+          padding: 2%;
+        }
+        @include responsive(laptop){
+          max-width: 100%;
+          margin-left: 5%;
+
+        }
+
+        img{
+          @include responsive(laptop){
+            max-width: 100%; 
+            &:last-of-type{
+              position: relative;
+              top: 60px;
+            }
+           }
+          @include responsive(mobilni){
+            margin-left: 10px;
+          }
+          max-width: 350px; 
+          margin-left: 8px;
+          &:last-of-type{
+            position: relative;
+            top: 60px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.images{
+  @include responsive(mobilni){
+    max-width: 400px;
+    margin:300px 0 50px;
+
+    }
+    @include responsive(tablet){
+      max-width: 100%;
+      margin:300px 0 50px;
+  
+      }
+  .row{
+    max-width: 90%;
+    margin:200px auto 100px;
+    display: flex;
+    justify-content: center;
+    @include responsive(laptop){
+      margin-left: 150px;
+
+     }
+    @include responsive(tablet){
+      max-width: 100%;
+      margin: auto;
+  
+      }
+    img{
+      max-width: 500px;
+      max-height: 360px;
+      margin-bottom: 50px;
+      margin-left: 20px;
+      @include responsive(tablet){
+        max-width: 100%;
+          margin: 10px auto;
+        }
+    }
+    }
+}
+
+.ponuda{
+  margin-bottom: 100px;
+  h2{
+    text-align: center;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  button{
+    @include dugme;
+  }
+}
+
+
+// Suha Marina styles
+.usluge{
+  @include responsive(mobilni){
+    max-width: 100%;
+    margin-top: 400px;
+  }
+  @include responsive(tablet){
+    max-width: 100%;
+  }
+  max-width: 1920px;
+  background-color: $headers;
+  margin-top: 200px;
+  h2{
+    color: $white !important;
+    text-align: center;
+    padding-top: 93px;
+  }
+  article{
+    @include responsive(mobilni){
+      max-width: 100%;
+    }
+    @include responsive(mobilni){
+      max-width: 100%;
+      margin: 10px auto;
+    }
+    max-width: 1600px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card{
+      margin-left: 50px;
+      padding: 0;
+      border-radius: 0;
+      @include responsive(mobilni){
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 50px;
+      }
+      @include responsive(tablet){
+        max-width: 100%;
+        margin-left: 10 px;
+        margin-bottom: 50px;
+      }
+      .card-body{
+        padding: 28px 36px 39px; 
+        text-align: center;
+        font-family: $fontFamily;
+        color: $headers;
+        h5{
+          font-size: 20px;
+          font-weight: 600;
+          padding-bottom: 14px;
+        }
+        p{
+          font-style: 18px;
+        }
+      }
+ 
+      img{
+        height: 320px;
+      }
+
+    }
+    &:last-of-type{
+      padding-bottom: 100px;
+    }
+  }
+
+}
+
+// Maslinovo ulje page styles
+.olives{
+  margin: 30% auto 10%;
+  max-width: 80%;
+  @include responsive(mobilni)
+{
+  max-width: 100%;
+  margin: 100% auto;
+}
+@include responsive(tablet)
+{
+  max-width: 100%;
+  margin: 60% auto;
+}
+  p{
+    font-size: 22px;
+    font-family: $fontFamily;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .container{
+    display: flex;
+    @include responsive(mobilni)
+    {
+      max-width: 100%;
+      display: block;
+    }
+    div{
+      max-width: 32%;
+      margin: 15px;
+      @include responsive(mobilni)
+      {
+        max-width: 100%;
+      }
+      img{
+        max-width: 100%;
+        margin: 10px;
+        @include responsive(mobilni)
+        {
+          max-width: 100%;
+        }
+
+      }
+    }
+  }
+  
+
+}
+
+.blog-button {
+  margin: 35% 9% 0;
+  background-color: white;
+  border: none;
+  a{
+    color: $headers !important;
+    font-size: 28px;
+    font-family: $fontSecond;
+    }
+    @include responsive(mobilni)
+    {
+      max-width: 100%;
+      margin-top: 170%;
+      margin-left: 10%;
+    }
+    @include responsive(tablet)
+    {
+      max-width: 100%;
+      margin-top: 100%;
+      margin-left: 10%;
+    }
+  cursor: pointer;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .left-arrows {
+    color: $date;
+    margin-right: 5px;
+    font-size: 35px;
+    font-weight: bold;
+}
+}
+.blogpost{
+  .post{
+ 
+    max-width: 80%;
+    margin: 30% auto 5%;
+    display: flex;
+    justify-content: space-between;
+    @include responsive(mobilni)
+    {
+      max-width: 100%;
+      margin-top: 10%;
+      margin-left: 10%;
+    }
+    @include responsive(tablet)
+    {
+      max-width: 100%;
+      margin-left: 10px;
+    }
+    .row{
+      @include responsive(mobilni)
+      {
+        max-width: 100%;
+      }
+      @include responsive(tablet)
+      {
+        max-width: 100%;
+      }
+      .content{
+        padding-right: 15%;
+        @include responsive(tablet)
+        {
+          max-width: 50%;
+          padding: 0;
+          margin-left: 20px;
+        }
+        p{
+          max-width: 75%;
+          margin: 40px 0;
+          font-family: $fontFamily;
+          font-size: 20px;
+        }
+        h4{
+          max-width: 75%;
+          color: $headers;
+          font-size: 28px;
+          font-weight: 600;
+          font-family: $fontFamily;
+        }
+        img{
+          max-width: 80%;
+        }
+      }
+      .blog{
+        padding-left: 15%;
+        @include responsive(mobilni)
+        {
+         max-width: 85%;
+         padding: 0;
+         margin-top: 20%;
+         margin-left: -5%;
+        }
+        @include responsive(tablet)
+        {
+          max-width: 50%;
+          padding: 0;
+          margin-right: 10px;
+        }
+        hr{
+          border: 1px solid $headers;
+          opacity: 0.5;
+        }
+      }
+    }
+   
+  
+  }
+}
+
+
+.buttons{
+  // @include flex;
+  max-width: 30%;
+  margin-left: 9%;
+  display: flex;
+  justify-content: space-between;
+  @include responsive(mobilni)
+  {
+    max-width: 100%;
+    margin-left: -2%;
+    margin-top: -10%;
+  }
+  @include responsive(tablet)
+  {
+    max-width: 50%;
+    margin-left: -2%;
+    margin-top: -10%;
+  }
+  
+  button {
+
+      background-color: white;
+      border: none;
+      color: $headers;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-family: $fontFamily;
+    
+    .back-button{
+      position: relative;
+       right: 20%;
+    }
+    .arrows {
+      color: #ff0000;
+      font-size: 35px;
+      position: relative;
+      right: 12%;
+      top: 10%;
+      ion-icon {
+        &:first-of-type{
+          position: relative;
+          left: 40%;
+        }
+      }
+  }
+  }
+
+}
