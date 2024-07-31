@@ -31,7 +31,7 @@ const Kontakt = () => {
               
             
             </form>
-            <a className="btn btn-danger">Posaljite</a>
+            <a href='/' className="btn btn-danger">Posaljite</a>
       </div>
      
       </div>
