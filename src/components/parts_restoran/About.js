@@ -1,9 +1,15 @@
 import React from 'react'
+import {  useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const About = ({imageSrc, imageSrc1,imageSrc2, title, text,text1, text2, text3, text4}) => {
+  useEffect(()=>{
+    AOS.init({duration: 1000})
+  }, []);
   return (
     <div>
-         <section className="about">
+         <section className="about" data-aos="fade-up">
       <article className=" row">
         
         <div className="text col-md-6">

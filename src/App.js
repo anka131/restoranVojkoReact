@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home'; 
 import Restoran from './pages/Restoran';
@@ -9,12 +9,19 @@ import MaslinovoUlje from './pages/MaslinovoUlje';
 import Blog from './pages/Blog';
 import Kontakt from './pages/Kontakt';
 import SingleBlog from './pages/SingleBlog'
+import ScrollToTop from './ScrollToTop';
+
 
 
 const App = () => {
+
   return (
-    <BrowserRouter>
+    
+     
+    <>
+    <ScrollToTop />
       <Routes>
+
         <Route path="/" element={<Home />} />
         <Route path="/restoran" element={<Restoran />} />
         <Route path="/suhamarina" element={<SuhaMarina />} />
@@ -23,12 +30,12 @@ const App = () => {
         <Route path="/kontakt" element={<Kontakt />} />
         <Route path="/singleblog" element={<SingleBlog />} />
 
-
-
-
       </Routes>
-    </BrowserRouter>
+    </>
+    
   );
+
+
 };
 
 export default App;

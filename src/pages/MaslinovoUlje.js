@@ -6,13 +6,14 @@ import Footer from '../components/Footer'
 import OPG from '../components/masline-part/OPG'
 
 
+
 const MaslinovoUlje = () => {
   return (
     <div>
       <Navbar imageSrc="/img/opg-vojko.jpg"/>
       <Hero title="OPG Vojko" text="Prodaja domaćeg maslinovog ulja"/>
-      <button  className='link'><Link to="kontakt.html">Pozovite nas</Link></button>
-      <section className="olives">
+      <Link to="/kontakt"><button className='link'>Pozovite nas </button></Link>
+      <section className="olives container" data-aos="fade-up">
         <p>Dugogodišnja obiteljska tradicija proizvodnje maslinovog ulja. Masline se beru ručno a proces obrade se u cjelosti obavlja na otoku, hladnim prešanjem. Na taj način dobivamo ekstra djevičansko maslinovo ulje aromatičnog okusa i mirisa, a zadržavaju se sve nutritivne vrijednosti.</p>
 
       <OPG 

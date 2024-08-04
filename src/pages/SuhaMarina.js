@@ -1,4 +1,7 @@
 import React from 'react'
+import {  useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
@@ -18,6 +21,7 @@ const SuhaMarina = () => {
                 spoj pristupačnosti i sigurnosti za plovila"
         />
         <About 
+        data-aos="fade-up"
         title = "Suha Marina"
         text="Suha marina nalazi se uz glavnu prometnicu koja spaja grad Rab sa Loparom u mjestu Mundanije, udaljena oko 1 km od samog centra. Prilaz odnosno ulaz prilagođen je najdužim, najširim te najvišim plovilima kojima je dozvoljen transport javnom prometnicom."
         text1="Smještena je uz obiteljsku kuću, ograđena sa svih strana, osvijetljena i čuvana/ kontrolirana čitavo vrijeme. Mogućnost smještaja je oko 100 plovila svih veličina i modela u vanjskom prostoru a postoji i opcija smještaja u garaži, koja je predviđena za manje čamce. Osiguravamo i prihvat kamp-kućica, prikolica, motora."

@@ -1,10 +1,17 @@
 import React from 'react'
+import {  useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
-const content = ({img, img1, img2, img3, img4, img5, img6}) => {
+const OPG = ({img, img1, img2, img3, img4, img5, img6}) => {
+  useEffect(()=>{
+    AOS.init({duration: 1000})
+  }, []);
+
   return (
     <div>
          
-            <div className="container">
+            <div className="container" data-aos="fade-up">
               <div>
                 <img  src={img} alt="" />
                 <img  src={img1} alt="" />
@@ -24,4 +31,4 @@ const content = ({img, img1, img2, img3, img4, img5, img6}) => {
   )
 }
 
-export default content
+export default OPG

@@ -1,6 +1,13 @@
 import React from 'react';
+import {  useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const Services = () => {
+  useEffect(()=>{
+    AOS.init({duration: 1000})
+  }, []);
+
   const services = [
     {
       imgSrc: '/img/marina3.png',
@@ -35,7 +42,7 @@ const Services = () => {
   ];
 
   return (
-    <section className='usluge'>
+    <section className='usluge container' data-aos="fade-up">
       <h2>Usluge</h2>
           <article className="row">
       {services.map((service, index) => (

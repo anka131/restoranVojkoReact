@@ -1,13 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {  useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const SingleBlogContent = ({subtitle, img, txt1, txt2, date,txt3}) => {
+  useEffect(()=>{
+    AOS.init({duration: 1000})
+  }, []);
   return (
-    <div className='blogpost'>
+    <div className="blogpost" data-aos="fade-up">
          <button className="blog-button">
-        <span className="left-arrows"><ion-icon name="chevron-back-outline"></ion-icon></span> <Link to="/blog">Blog</Link>
+         <Link to="/blog">
+        <span className="left-arrows"><ion-icon name="chevron-back-outline"></ion-icon>
+         <span className='txt'>Blog</span>
+        </span> 
+        </Link>
     </button>
-      <section className="post">
+      <section className="post container">
         <div className="row">
           <div className="content col-md-8">
             <h4>{subtitle}</h4>
