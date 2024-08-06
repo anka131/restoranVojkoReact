@@ -4,7 +4,7 @@ import {  useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
-const SingleBlogContent = ({subtitle, img, txt1, txt2, date,txt3}) => {
+const SingleBlogContent = ({subtitle, img, txt1, txt2, date, txt3}) => {
   useEffect(()=>{
     AOS.init({duration: 1000})
   }, []);
