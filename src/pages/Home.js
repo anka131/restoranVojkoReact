@@ -1,5 +1,5 @@
 
-import Navbar from '../components/Navbar';
+import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Welcome from '../components/parts_pocetna/Welcome';
 import BlogPosts from '../components/blog-parts/BlogPosts';
@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar imageSrc="img/home-hero1.jpg" />
+      <Header imageSrc="img/home-hero1.jpg" />
       <Hero title="Suha Marina 'Vojko'" text="Dobrodošli na stranice našeg obiteljskog restorana u sklopu ACI marine u Supetarskoj Drazi te Suhe marine u Mundanijama, gdje spoj vrhunske gastronomije i sigurne luke stvaraju nezaboravno iskustvo uz more."/>
       <Welcome 
        

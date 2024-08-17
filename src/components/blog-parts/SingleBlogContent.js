@@ -29,14 +29,16 @@ const SingleBlogContent = ({subtitle, img, txt1, txt2, date, txt3}) => {
           <div className="blog col-md-4">
             <h4>RECENT POSTS</h4>
             <div>
+             
               <article>
                 <p>{date}</p>
-                <p>{txt3}</p>
+                <a style={{color: 'black'}} href='/SingleBlog'><p>{txt3}</p></a>
                 <hr />
               </article>
+              
                 <article>
                   <p>{date}</p>
-                  <p>{txt3}</p>
+                  <a style={{color: 'black'}} href='/SingleBlog'><p>{txt3}</p></a>
                   <hr />
                 </article>
             </div>
@@ -47,13 +49,18 @@ const SingleBlogContent = ({subtitle, img, txt1, txt2, date, txt3}) => {
       </section>
       
     <div className="buttons">
+    <a href='/SingleBlog'>
       <button className="back-button">
         <span className="arrows"><ion-icon name="chevron-back-outline"></ion-icon> <ion-icon name="chevron-back-outline"></ion-icon></span>Prev
     </button>
-      <button className="next-button">
+    </a>
+    <a href='/SingleBlog'>
+    <button className="next-button">
         Next <span className="arrows"><ion-icon name="chevron-forward-outline"></ion-icon> <ion-icon name="chevron-forward-outline"></ion-icon></span>
 
     </button>
+    </a>
+      
     </div>         
 
     </div>

@@ -5,10 +5,6 @@ const Navbar = ({ imageSrc}) => {
   return (
     <div>
 
-<header>
-      <div className="banner-wrapper">
-        <img className="banner" src={imageSrc} alt="" />
-      </div>
 
         <nav className="navbar navbar-expand-lg">
           <div className="container">
@@ -40,8 +36,6 @@ const Navbar = ({ imageSrc}) => {
             </div>
           </div>
         </nav>
-      
-      </header>
     </div>
   )
 }

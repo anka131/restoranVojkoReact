@@ -1,16 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Navbar from '../components/Navbar'
+import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 import OPG from '../components/masline-part/OPG'
 
 
 
+
 const MaslinovoUlje = () => {
   return (
     <div>
-      <Navbar imageSrc="/img/opg-vojko.jpg"/>
+      <Header imageSrc="/img/opg-vojko.jpg"/>
       <Hero title="OPG Vojko" text="Prodaja domaćeg maslinovog ulja"/>
       <Link to="/kontakt"><button className='link'>Pozovite nas </button></Link>
       <section className="olives container" data-aos="fade-up">

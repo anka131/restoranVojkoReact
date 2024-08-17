@@ -1,16 +1,15 @@
 import React from 'react'
-
-import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import About from '../components/parts_restoran/About'
 import Slike from '../components/parts_restoran/Slike'
 import Ponuda from '../components/parts_restoran/Ponuda'
+import Header from '../components/Header'
 
 const Restoran = () => {
   return (
     <div>
-    <Navbar imageSrc="/img/restoran-hero.png"/>
+    <Header imageSrc="/img/restoran-hero.png"/>
     <Hero  title="Restoran 'Vojko'" text="Dobro došli na stranice našeg obiteljskog restorana koji uspješno posluje više od dvadeset godina." />
     <About 
     title="Restoran 'Vojko'" 

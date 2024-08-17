@@ -25,7 +25,7 @@ h2 {
 }
 
 a {
-  color: white !important;
+  color: white;
   text-decoration: none !important;
   font-family: "Monsterrat", sans-serif;
   font-weight: 500;
@@ -70,6 +70,12 @@ header {
 header .banner-wrapper {
   position: absolute;
 }
+@media screen and (min-width: 2560px) {
+  header .banner-wrapper{
+    min-width: 2560px;
+  }
+  
+} 
 @media screen and (min-width: 1020px) and (max-width: 1530px) {
   header .banner-wrapper {
     max-width: 100%;
@@ -187,6 +193,12 @@ footer {
 @media screen and (min-width: 1020px) and (max-width: 1530px) {
   footer {
     max-width: 100%;
+  }
+}
+@media (min-width: 2260px) {
+  footer {
+    width: 100%;
+    height: 1440px;
   }
 }
 footer img {

@@ -1,12 +1,12 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import SingleBlogContent from '../components/blog-parts/SingleBlogContent'
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 const SingleBlog = () => {
   return (
     <div>
-        <Navbar imageSrc="img/steven-weeks-7uhSBPRtQGw-unsplash_resized.jpg"/>
+        <Header imageSrc="img/steven-weeks-7uhSBPRtQGw-unsplash_resized.jpg"/>
         <SingleBlogContent 
         subtitle="Fusce eget semper lacus. Sed ipsum purus, mollis non magna at, pellentesque pharetra augue."
         txt1="Fusce eget semper lacus. Sed ipsum purus, mollis non magna at, pellentesque pharetra augue. Quisque auctor urna elit, eu cursus massa ultricies vitae. Donec lorem diam, porttitor ac leo at, pretium faucibus metus"

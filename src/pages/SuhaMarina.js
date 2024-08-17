@@ -1,17 +1,17 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import About from '../components/parts_restoran/About'
 import Slike from '../components/parts_restoran/Slike'
 import Ponuda from '../components/parts_restoran/Ponuda'
 import Usluge from '../components/marina-part/Usluge'
+import Header from '../components/Header'
 
 
 const SuhaMarina = () => {
   return (
     <div>
-        <Navbar imageSrc="/img/marina-hero.png"/>
+        <Header imageSrc="/img/marina-hero.png"/>
         <Hero 
         title="Suha Marina 'Vojko'" 
         text=" Suha marina, udaljena samo 1 km od centra Mundanija, pruža savršen
