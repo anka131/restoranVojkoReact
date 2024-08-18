@@ -6,7 +6,7 @@ const Kontakt = () => {
   return (
     <div>
         
-        <footer>
+        <footer className='fotpage'>
             <Navbar />
       <h2>Kontakt</h2>
       <div className="container row"> 

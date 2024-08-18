@@ -11,6 +11,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
+/* ROOT */
+
 * {
   margin: 0;
   padding: 0;
@@ -62,6 +64,7 @@ a {
   }
 }
 
+/* HEADER */
 
 header {
   font-family: "Monsterrat", sans-serif;
@@ -133,6 +136,9 @@ header nav .container img {
   opacity: 100%;
 }
 
+
+/*  HERO  */
+
 .hero {
   z-index: 9999;
   position: relative;
@@ -176,110 +182,8 @@ header nav .container img {
   font-family: "Monsterrat", sans-serif;
 }
 
-footer {
-  background-image: url("/img/footer-bg.png");
-  padding: 50px 0 130px;
-}
-@media (max-width: 430px) {
-  footer {
-    max-width: 100%;
-  }
-}
-@media (max-width: 868px) {
-  footer {
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 1020px) and (max-width: 1530px) {
-  footer {
-    max-width: 100%;
-  }
-}
-@media (min-width: 2260px) {
-  footer {
-    width: 100%;
-    height: 1440px;
-  }
-}
-footer img {
-  width: 126px;
-  height: 78px;
-  opacity: 100%;
-}
-footer h2 {
-  color: white !important;
-  text-align: center;
-  margin-top: 50px !important;
-}
-footer .container {
-  max-width: 1600px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .container .text img {
-  width: 280px;
-  height: 165px;
-}
-footer .container .text p {
-  font-family: "Monsterrat", sans-serif;
-  color: white;
-}
-footer .container .text p:first-of-type {
-  margin-top: 40px;
-}
-footer .container .forma form {
-  font-family: "Monsterrat", sans-serif;
-  font-size: 14px;
-}
-footer .container .forma form label {
-  color: white;
-}
-footer .container .forma form input, footer .container .forma form textarea {
-  background-color: #fff;
-  opacity: 58%;
-  border-radius: 0 !important;
-}
-footer .container .forma a {
-  padding: 10px 50px;
-  margin: 0px 50px;
-  background-color: rgb(10, 30, 85);
-  color: white;
-  background-color: rgb(200, 48, 47);
-  margin-top: 38px;
-  text-align: center;
-  position: relative;
-  left: 125px;
-  border-radius: 0 !important;
-}
+/* Welcome Pocetna */
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .background-full-width {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-  }
-  .text, .image {
-    flex: 1;
-  }
-}
 .welcome {
   max-width: 1600px;
   margin: 30% auto 100px;
@@ -452,6 +356,9 @@ footer .container .forma a {
     margin-bottom: 30px;
   }
 }
+
+/* BLOG */
+
 .blog-poc{
   margin: 15% auto !important;
 }
@@ -613,6 +520,174 @@ footer .container .forma a {
   text-align: center;
 }
 
+/* SINGLE-BLOG page */
+
+/* Back to Blog button on single blog page */
+.blog-button {
+  margin: 35% 9% 0;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.blog-button .txt {
+  color: rgb(10, 30, 85) !important;
+  font-size: 28px;
+  font-family: "Great Vibes", cursive;
+}
+@media (max-width: 430px) {
+  .blog-button {
+    max-width: 100%;
+    margin-top: 170%;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 868px) {
+  .blog-button {
+    max-width: 100%;
+    margin-top: 100%;
+    margin-left: 10%;
+  }
+}
+.blog-button .left-arrows {
+  color: rgb(200, 48, 47);
+  margin-right: 5px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Blog post on single page */
+
+.blogpost .post {
+  margin: 2% auto 5%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 430px) {
+  .blogpost .post {
+    max-width: 100%;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 868px) {
+  .blogpost .post {
+    max-width: 100%;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 430px) {
+  .blogpost .post .row {
+    max-width: 100%;
+  }
+}
+@media (max-width: 868px) {
+  .blogpost .post .row {
+    max-width: 100%;
+  }
+}
+.blogpost .post .row .content {
+  padding-right: 15%;
+}
+@media (max-width: 868px) {
+  .blogpost .post .row .content {
+    max-width: 50%;
+    padding: 0;
+    margin-left: 20px;
+  }
+}
+.blogpost .post .row .content p {
+  max-width: 75%;
+  margin: 40px 0;
+  font-family: "Monsterrat", sans-serif;
+  font-size: 20px;
+}
+.blogpost .post .row .content h4 {
+  max-width: 75%;
+  color: rgb(10, 30, 85);
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Monsterrat", sans-serif;
+}
+.blogpost .post .row .content img {
+  max-width: 80%;
+}
+.blogpost .post .row .blog {
+  padding-left: 15%;
+}
+@media (max-width: 430px) {
+  .blogpost .post .row .blog {
+    max-width: 85%;
+    padding: 0;
+    margin-top: 20%;
+    margin-left: -5%;
+  }
+}
+@media (max-width: 868px) {
+  .blogpost .post .row .blog {
+    max-width: 50%;
+    padding: 0;
+    margin-right: 10px;
+  }
+}
+.blogpost .post .row .blog hr {
+  border: 1px solid rgb(10, 30, 85);
+  opacity: 0.5;
+}
+
+/* Next & Back buttons on single page */
+.buttons {
+  max-width: 30%;
+  margin-left: 9%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 430px) {
+  .buttons {
+    max-width: 100%;
+    margin-left: -2%;
+    margin-top: -10%;
+  }
+}
+@media (max-width: 868px) {
+  .buttons {
+    max-width: 50%;
+    margin-left: -2%;
+    margin-top: -10%;
+  }
+}
+.buttons button {
+  background-color: white;
+  border: none;
+  color: rgb(10, 30, 85);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: "Monsterrat", sans-serif;
+}
+.buttons button .back-button {
+  position: relative;
+  right: 20%;
+}
+.buttons button .arrows {
+  color: #ff0000;
+  font-size: 35px;
+  position: relative;
+  right: 12%;
+  top: 10%;
+}
+.buttons button .arrows ion-icon:first-of-type {
+  position: relative;
+  left: 40%;
+}
+
+/* ABOUT Restoran i Suha Marina pages */
+
 .about {
   margin: 30% auto 10%;
   max-width: 80%;
@@ -634,6 +709,11 @@ footer .container .forma a {
 @media screen and (min-width: 1020px) and (max-width: 1530px) {
   .about {
     margin: 30% auto;
+  }
+}
+@media (min-width: 2260px) {
+  .about{
+    margin-top: 35%;
   }
 }
 .about article {
@@ -831,6 +911,9 @@ footer .container .forma a {
   top: 60px;
 }
 
+/* Slike Restoran i Suha Marina */
+
+
 @media (max-width: 430px) {
   .images {
     max-width: 400px;
@@ -872,6 +955,8 @@ footer .container .forma a {
   }
 }
 
+/* Dugme za redirekciju na Restoran i Suhu Marinu  */
+
 .ponuda {
   margin-bottom: 100px;
   display: flex;
@@ -888,6 +973,9 @@ footer .container .forma a {
   background-color: rgb(10, 30, 85);
   color: white;
 }
+
+
+/* Usluge Suha Marina */
 
 .usluge {
   max-width: 1920px;
@@ -978,6 +1066,10 @@ a .link{
   border-color: rgb(200, 48, 47);
 }
 
+
+
+/* Maslinovo ulje page */
+
 .olives {
   margin: 30% auto 10%;
 }
@@ -1028,162 +1120,120 @@ a .link{
   }
 }
 
-.blog-button {
-  margin: 35% 9% 0;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-.blog-button .txt {
-  color: rgb(10, 30, 85) !important;
-  font-size: 28px;
-  font-family: "Great Vibes", cursive;
+
+
+
+/* FOOTER */
+
+
+footer {
+  background-image: url("/img/footer-bg.png");
+  padding: 50px 0 130px;
 }
 @media (max-width: 430px) {
-  .blog-button {
+  footer {
     max-width: 100%;
-    margin-top: 170%;
-    margin-left: 10%;
   }
 }
 @media (max-width: 868px) {
-  .blog-button {
+  footer {
     max-width: 100%;
-    margin-top: 100%;
-    margin-left: 10%;
   }
 }
-.blog-button .left-arrows {
-  color: rgb(200, 48, 47);
-  margin-right: 5px;
-  font-size: 35px;
-  font-weight: bold;
+@media screen and (min-width: 1020px) and (max-width: 1530px) {
+  footer {
+    max-width: 100%;
+  }
+}
+@media (min-width: 2260px) {
+  footer {
+    width: 100%;
+  }
 }
 
-.blogpost .post {
-  margin: 2% auto 5%;
+  @media (min-width: 2260px) {
+    .fotpage {
+      width: 100%;
+      height: 1440px;
+    }
+  
+}
+footer img {
+  width: 126px;
+  height: 78px;
+  opacity: 100%;
+}
+footer h2 {
+  color: white !important;
+  text-align: center;
+  margin-top: 50px !important;
+}
+footer .container {
+  max-width: 1600px;
+  margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
-@media (max-width: 430px) {
-  .blogpost .post {
-    max-width: 100%;
-    margin-top: 10%;
-    margin-left: 10%;
-  }
+footer .container .text img {
+  width: 280px;
+  height: 165px;
 }
-@media (max-width: 868px) {
-  .blogpost .post {
-    max-width: 100%;
-    margin-left: 10px;
-  }
-}
-@media (max-width: 430px) {
-  .blogpost .post .row {
-    max-width: 100%;
-  }
-}
-@media (max-width: 868px) {
-  .blogpost .post .row {
-    max-width: 100%;
-  }
-}
-.blogpost .post .row .content {
-  padding-right: 15%;
-}
-@media (max-width: 868px) {
-  .blogpost .post .row .content {
-    max-width: 50%;
-    padding: 0;
-    margin-left: 20px;
-  }
-}
-.blogpost .post .row .content p {
-  max-width: 75%;
-  margin: 40px 0;
+footer .container .text p {
   font-family: "Monsterrat", sans-serif;
-  font-size: 20px;
+  color: white;
 }
-.blogpost .post .row .content h4 {
-  max-width: 75%;
-  color: rgb(10, 30, 85);
-  font-size: 28px;
-  font-weight: 600;
+footer .container .text p:first-of-type {
+  margin-top: 40px;
+}
+footer .container .forma form {
   font-family: "Monsterrat", sans-serif;
+  font-size: 14px;
 }
-.blogpost .post .row .content img {
-  max-width: 80%;
+footer .container .forma form label {
+  color: white;
 }
-.blogpost .post .row .blog {
-  padding-left: 15%;
+footer .container .forma form input, footer .container .forma form textarea {
+  background-color: #fff;
+  opacity: 58%;
+  border-radius: 0 !important;
 }
-@media (max-width: 430px) {
-  .blogpost .post .row .blog {
-    max-width: 85%;
-    padding: 0;
-    margin-top: 20%;
-    margin-left: -5%;
-  }
-}
-@media (max-width: 868px) {
-  .blogpost .post .row .blog {
-    max-width: 50%;
-    padding: 0;
-    margin-right: 10px;
-  }
-}
-.blogpost .post .row .blog hr {
-  border: 1px solid rgb(10, 30, 85);
-  opacity: 0.5;
+footer .container .forma a {
+  padding: 10px 50px;
+  margin: 0px 50px;
+  background-color: rgb(10, 30, 85);
+  color: white;
+  background-color: rgb(200, 48, 47);
+  margin-top: 38px;
+  text-align: center;
+  position: relative;
+  left: 125px;
+  border-radius: 0 !important;
 }
 
-.buttons {
-  max-width: 30%;
-  margin-left: 9%;
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 430px) {
-  .buttons {
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .background-full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  img {
     max-width: 100%;
-    margin-left: -2%;
-    margin-top: -10%;
+    height: auto;
+    display: block;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .text, .image {
+    flex: 1;
   }
 }
-@media (max-width: 868px) {
-  .buttons {
-    max-width: 50%;
-    margin-left: -2%;
-    margin-top: -10%;
-  }
-}
-.buttons button {
-  background-color: white;
-  border: none;
-  color: rgb(10, 30, 85);
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  font-family: "Monsterrat", sans-serif;
-}
-.buttons button .back-button {
-  position: relative;
-  right: 20%;
-}
-.buttons button .arrows {
-  color: #ff0000;
-  font-size: 35px;
-  position: relative;
-  right: 12%;
-  top: 10%;
-}
-.buttons button .arrows ion-icon:first-of-type {
-  position: relative;
-  left: 40%;
-}/*# sourceMappingURL=style.css.map */
